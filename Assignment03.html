@@ -5,7 +5,7 @@
 <title>Assignment03</title>
 
 
-<!-- ADDED NEW VERTEX SHADER with no animation-->
+<!-- Create Triangle w/o animation-->
 <script id="vertex-shader-still" type="x-shader/x-vertex">
     #version 300 es
     
@@ -34,7 +34,7 @@ main()
 }
 </script>
 
-
+<!-- Create Square w/o animation-->
 <script id="vertex-shader" type="x-shader/x-vertex">
 #version 300 es
 
@@ -72,6 +72,7 @@ main()
 <script type="text/javascript" src="Assignment03.js"></script>
 </head>
 
+<!-- Keyboard Instructions-->
 <body>
 <pre> 
 	W = Top triangle
@@ -80,14 +81,16 @@ main()
 	D = Right Triangle
 </pre>
 
-
+<!-- Create Button-->
 <button id="Direction">Change Rotation Direction</button>
 
+<!-- Create Slider-->
 <div>
     Speed <input id="slider" type="range"
     min="0.0" max="0.3" step="0.1" value="0.1">
 </div>
 
+<!-- Create Menu-->
 <select id="Controls" size="2">
     <option value="0">Upper Right Triangle</option>
     <option value="1">Lower Left Triangle</option>

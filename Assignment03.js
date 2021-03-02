@@ -45,7 +45,7 @@ window.onload = function init()
         vec2(.5, 0.6)
     ];
 
-    // establish shaders and uniform variables
+    //Establish shaders and uniform variables
     program = initShaders(gl, "vertex-shader", "fragment-shader");
     thetaLoc = gl.getUniformLocation(program, "uTheta");
     programTriangle = initShaders(gl, "vertex-shader-still", "fragment-shader-still");
